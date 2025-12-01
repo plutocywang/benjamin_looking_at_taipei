@@ -1,0 +1,137 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+body {
+	margin:0;
+    padding: 0;
+	font-family: 'Lato', sans-serif;
+	/*text-align:center;*/
+	background-color: black;
+    overflow: hidden;
+}
+#bg {
+    text-align:center;
+}
+#map {
+    position: absolute;
+}
+#cboxLoadedContent {
+    background: url(../img/popup/bg_window.jpg);
+}
+.inline_content {
+    padding: 2.1% 8%;
+}
+.intro-title {
+    padding: 7px 0;
+}
+.topic-title
+{
+    width: 20%;
+    position: relative;
+    right: -0.7%;
+    float: right;
+}
+.topic-film-block {
+    margin-bottom: 20px;
+    width: 80%;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed,
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.description-block,
+.film-description-block {
+    margin: 0 2.5%;
+}
+.description-block dl dt,
+.description-block dl dd {
+    margin-bottom: 3px;
+}
+.description-block dl dt a {
+    border-bottom: 1px dotted black;
+}
+.description-block dl dt img {
+    height: 11px;
+    width: auto;
+}
+.film-description-block dl dd {
+    margin-left: 85px;
+}
+.on_map {
+	z-index: 3000;
+}
+.marker {
+	position: absolute;
+}
+.marker1 {
+	top: 23%;
+	left: 41.5%;
+	width: 5.3%;
+    height: auto;
+}
+.marker2 {
+	top: 28%;
+	left: 52%;
+    width: 6%;
+    height: auto;
+}
+.marker3 {
+    top: 36%;
+    left: 47%;
+    width: 4.5%;
+    height: auto;
+}
+.marker4 {
+    top: 67%;
+    left: 46.5%;
+    width: 5%;
+    height: auto;
+}
+.marker5 {
+    top: 54%;
+    left: 52.5%;
+    width: 3.9%;
+    height: auto;
+}
+.marker6 {
+    top: 53%;
+    left: 56%;
+    width: 4%;
+    height: auto;
+}
+.marker-photo {
+    top: 5%;
+    left: 8%;
+    width: 8.5%;
+    height: auto;
+}
+.marker-title {
+    top: 39%;
+    left: 8%;
+    width: 20%;
+    height: auto;
+}
+.marker-ben {
+    top: 5%;
+    right: 25%;
+    width: 8%;
+    height: auto;
+}
+.marker-origination {
+    top: 5%;
+    right: 8%;
+    width: 9%;
+    height: auto;
+}

@@ -1,0 +1,751 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="keywords" content="班雅明看臺北, 班雅明, 臺北, 政治大學, 陳儒修" />
+    <meta name="author" content="政治大學班雅明看臺北計畫團隊, 鄭嘉鼎">
+    <meta name="description" content="班雅明在「巴黎，十九世紀的都城」（1935年提綱）一文中，建構出關於巴黎的辯證圖像。在他的眼中，巴黎呈現雅努斯神(Janus)的兩幅面孔：一面是文明，另一面則是野蠻；一面是希望，另一面則是絕望。本創作計畫建構在班雅明的論述分析上，只不過我們的論述對象是臺北。團隊成員同樣發展出六個關於臺北現代化歷程的子題，經過每個成員踏查、觀察、蒐集資料、解析文本之後，完成了六個數位影音文本。" />
+	<title>班雅明看臺北 Benjamin Looking At Taipei</title>
+    <link href="./img/title.png" rel="image_src" type="image/png">
+    <meta property="og:title" content="班雅明看臺北 Benjamin Looking At Taipei" />
+    <meta property="og:description" content="班雅明在「巴黎，十九世紀的都城」（1935年提綱）一文中，建構出關於巴黎的辯證圖像。在他的眼中，巴黎呈現雅努斯神(Janus)的兩幅面孔：一面是文明，另一面則是野蠻；一面是希望，另一面則是絕望。本創作計畫建構在班雅明的論述分析上，只不過我們的論述對象是臺北。團隊成員同樣發展出六個關於臺北現代化歷程的子題，經過每個成員踏查、觀察、蒐集資料、解析文本之後，完成了六個數位影音文本。" />
+    <meta property="og:url" content="http://140.119.189.154/101462001/benjamin/" />
+    <meta property="og:image" content="http://140.119.189.154/101462001/benjamin臺北/img/title.png" />
+    <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/colorbox.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/progress-bar-style.css">
+
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.colorbox-min.js"></script>
+</head>
+<body>
+    <div class="demo-wrapper html5-progress-bar">
+        <div class="progress-bar-wrapper">
+            <progress id="progressbar" value="0" max="100"></progress>
+            <span class="progress-value">0%</span>
+        </div>
+    </div>
+    <div id="bg">
+        <div id="map">
+            <img src="./img/bg_map.jpg" alt="map">
+            <div class="on_map marker marker-photo">
+                <a class="inline" href="#intro">
+                    <img class="img-responsive" src="./img/benjamin.png" alt="班雅明">
+                </a>
+            </div>
+            <div class="on_map marker marker-title">
+                <img class="img-responsive" src="./img/title.png" alt="班雅明看臺北：跨領域對話與數位呈現">
+            </div>
+            <div class="on_map marker marker1">
+                <a class="inline film" href="#cafe">
+                    <img class="img-responsive" src="./img/icon_cafe.png" alt="臺北咖啡廳或內在世界">
+                </a>
+            </div>
+            <div class="on_map marker marker2">
+                <a class="inline" href="#realestate">
+                    <img class="img-responsive" src="./img/icon_house.png" alt="房地產廣告或西洋景">
+                </a>
+            </div>
+            <div class="on_map marker marker3">
+                <a class="inline" href="#understreet">
+                    <img class="img-responsive" src="./img/icon_under.png" alt="臺北地下街或巴黎拱廊街">
+                </a>
+            </div>
+            <div class="on_map marker marker4">
+                <a class="inline" href="#boai">
+                    <img class="img-responsive" src="./img/icon_flower.png" alt="博愛特區或街壘">
+                </a>
+            </div>
+            <div class="on_map marker marker5">
+                <a class="inline" href="#dunhua">
+                    <img class="img-responsive" src="./img/icon_road.png" alt="敦化南北路或林蔭大道">
+                </a>
+            </div>
+            <div class="on_map marker marker6">
+                <a class="inline" href="#deptmarket">
+                    <img class="img-responsive" src="./img/icon_101.png" alt="百貨市集或世界博覽會">
+                </a>
+            </div>
+            <div class="on_map marker marker-origination">
+                <a class="inline" href="#origination">
+                    <img class="img-responsive" src="./img/btn_origination.png">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- inline window content -->
+    <div style="display: none;">
+        <div id="cafe" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="topic-title">
+                <img src="./img/popup/cafe.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Taipei Coffee Shop Saloon Culture or the Interiors</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                    班雅明在「路易－菲力普或內在世界」章節中講述，法國路易－菲力普統治時期，
+                    平民開始區分生活與工作場所。生活與工作空間的分隔，
+                    使室內居室成為個人在私領域構築幻覺的空間。為使室內居室保有幻覺，
+                    避免工作場所所包含的現實性滲入此種幻覺，工作與居室分割成為必然，
+                    同時居室也是個人展示個性的場所。居室主人收藏藝術品，
+                    使物品用脫離實用價值桎梏，用收藏品建構居室個性。
+                    裝飾物對房屋的意義如同簽名對繪畫的意義。
+                    居室裝飾不僅滿足個人建構幻覺世界慾望，亦是向他人展示其擁有的文化資本的手段。
+                </p>
+                <p>
+                    當代消費主義的盛行下，臺北特定類型咖啡廳也有類似居室的展示價值。
+                    此類咖啡廳不同於連鎖咖啡品牌，常以民宅改建經營，隱身於住宅區靜謐的巷弄，
+                    使咖啡廳公私界線逐漸模糊，雖作為公共空間，但個人卻在此構築私人空間。
+                    臺北咖啡廳彷彿成為個人在外的居室，不僅要提供足夠讓人投入的靜謐私人空間，
+                    還得擁有舒適的居室布置，形成臺北特殊文化景觀。
+                    本創作將想像十九世紀的班雅明將如何看待當代臺北咖啡廳獨特的文化景觀？
+                    十九世紀法國的居室與沙龍文化，又能如何與當代臺北咖啡廳文化對話？
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                    Walter Benjamin stated in “Louis-Philippe or the Interior” that private citizens in LouisPhilippe’s
+                reign started to distinguish between living and working place. The separation of these two
+                places made the Interior a private sphere of one’s personal illusions. To retain the illusions and avoid
+                the reality of workplace from penetrating, the separation was inevitable. Furthermore, the Interior
+                became a place to display one’s individuality. The owner of the Interior collected works of art, freeing
+                the objects from their shackles of practical value and constructing the room’s personality. The
+                significance of the ornaments in the room was like that of the signature on a painting. The decoration
+                not only satisfied one’s desire to construct a world of illusions, but it was also a means to show his
+                cultural capital.
+                </p>
+                <p>
+                    Under the prevalence of contemporary consumerism, Taipei also has some specific
+                types of cafés with the display value like the Interior. Different from those famous coffeehouse
+                chains, these cafés are usually rebuilt from dwelling houses hidden in the quiet residential alleys,
+                hence blurring the lines between public and private spheres. Though a public space, people
+                come here to enjoy their personal private space. Cafés in Taipei are like outside Interiors. They
+                provide a quiet and personal space for people to indulge themselves, and also boast comfortable
+                interior furnishings, thus becoming a distinctive cultural landscape in Taipei.
+                </p>
+                <p>
+                    This creation imagines how Benjamin from the 19th century will look at the unique cultural
+                landscape of contemporary Taipei cafés. What will happen when the Interior and salon culture in
+                19th century France meets contemporary Taipei café culture?
+                </p>
+                <br>
+                <dl class="dl-horizontal">
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        黃梓和，畢業於政大中文系，現就讀政大廣播電視學系，興趣電影、電動。
+                        育有一貓名為吉爾菲艾斯 •馮•艾莉歐妮諾。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Tzu-Ho HUANG</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="realestate" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>            </div>
+            <div class="topic-title">
+                <img src="./img/popup/realestate.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Estate Advertement or the Panoramas</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                    「藝術因為鋼鐵構造而被建築學所拋棄，同樣在西洋景中它也為繪畫所拋棄。
+                    借助於技術手段，人們努力使得西洋景成為完美模仿自然的陣地。」
+                    <label>
+                        －《巴黎，十九世紀的都城．格蘭威爾與世界博覽會》
+                    </label>
+                </p>
+                <p>
+                    二十一世紀房地產乘資本主義之勢，成了新的都市幻影。
+                    在臺北，一座一座穿金戴銀摩登豪宅的樣品屋，像席地而坐的巨型大物，
+                    穿插在街道巷弄之中；數之不盡的海報、電視廣告、無時無刻不在人們的眼球內。
+                    當地產霸權如此舖天蓋地，對絕大多數平民百姓而言，卻只是僅供供奉的海市蜃樓。
+                    這些形塑出美好居家願景，甚至是現代消費邏輯底下優勝者人生方式的廣告，
+                    人們定晴所看，甚至費上一生營營役役而追尋的，到底是幻影還是真實？
+                </p>
+                <p>
+                    本短片以班雅明西洋景的理論為鑑，透過聲音跟畫面的拼貼，
+                    解構並重構房地產廣告，以此揭示如西洋景般符號的象徵引用與操作。
+                    透過拼貼，建立新的、不和諧的觀賞經驗，獲致多變／多重的意義，
+                    引發觀者的反思。
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                    "With construction in iron, architecture began to outgrow art; painting did the same in its turn with the
+                    dioramas. Preparation for the dioramas reached its peak just at the moment when the arcades began to
+                    appear. Tireless efforts had been made to render the dioramas, by means of technical artifice, the locus of a
+                    perfect imitation of nature."
+                    <p class="text-right">
+                        <strong>Walter Benjamin, "Paris, Capital of the Nineteenth Century”</strong><br>
+                        <em>Estate Advertisement or the Dioramas</em>
+                    </p>
+                <p>
+                    Real estate industry flourishes as the new city phantasmagoria in the capitalist twenty-first century.
+                    In Taipei, model homes flood every street and lane, numerously, and monstrously. The real estate, in the
+                    forma of countless posters, TV ads, websites, app., etc, rush into people’s eyes, scrambling as if they are
+                    masters proclaiming the arrival of a empire. However, for most of the citizens, those huge, luxurious
+                    buildings, are never what they can afford. Here raises a question: for the existence of those wonderful
+                    architectures and their ads, do they really worth our entire life chasing after, or they’re just like a
+                    untouchable, deceiving imaginations standing there for us to worship?
+                </p>
+                <p>
+                    This short clip, referring to Walter Benjamin’s theory, randomly is composed of voices and scenes of
+                    the city. They deconstruct and reconstruct the real estate advertisements, attempting to reveal the symbolic 
+                    manipulation of those ads. By providing a new, non-harmonic watching experience, I intend to find out a
+                    varied, multifaceted meaning to the ideas of the estates.
+                </p>
+                <br>
+                <dl class="dl-horizontal">                    
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        馬慧妍，現就讀政治大學新聞研究所，畢業於世新大學新聞系畢業，
+                        澳門獨立媒體《喧嘩》創辦人、主編。寫詩、散文、小說、劇本，
+                        現專注學習占星、塔羅等各種神秘知識。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Wai-In MA</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="understreet" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="topic-title">
+                <img src="./img/popup/understreet.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Underground Market or the Arcade</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                    班雅明認為，19世紀的巴黎拱廊街這個現代新發明，宛如一座微型城市，
+                    它在資本主義消費文化興起後，逐漸被百貨公司與購物中心取代。
+                    過去在拱廊街裡「遛烏龜」逆反於現代社會異化、分工與快速進步的那些漫遊者，
+                    終被商業文化收編，迷失在商品迷宮裡。
+                </p>
+                <p>
+                    本片透過男主角呈現臺北地下街樣貌，搭配班雅明對機械複製時代現代性的描述，
+                    在今日影像畫面與過去文字概念的兩相對照下，以班雅明「只呈現，不解釋」的精神，
+                    一步步呈現班雅明現代性概念在數位時代下的轉變。
+                </p>
+                <p>
+                    本片分為三個部份，首先以一名工作單調、備受壓迫的社會新鮮人，
+                    帶出臺北地下街主要活動人群──21世紀臺北生存不易的年輕人。
+                    其次，呈現拱廊街與地下街相似之處，及資本主義和全球化影響，
+                    如班雅明認為都市將因機械複製而同質化，臺北地下街有如拱廊街一般，
+                    成為當代都市、甚至是世界的縮影。
+                </p>
+                <p>
+                    影片最後，地下街充斥廉價商品和電子娛樂器材的夢幻烏托邦景象，
+                    宛如暫離現實的避難所，商品使人迷醉，數位科技持續使人異化，
+                    過去漫遊於人群中的移情亦轉向虛擬世界。
+                    電玩試玩站寓言性地解釋了數位時代人們的異化，
+                    「無形私有空間」讓人忽略身邊有形的人事物，地下街裡人人席地而坐的特殊景象，
+                    宛如數位時代的另類現代性象徵。
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                    Walter Benjamin believes that the arcades of Paris of the 19th century were the new inventions
+                    of modernity, just like a miniature city. However, after the rise of capitalist consumer culture, the
+                    arcades were gradually replaced by department stores and shopping centers.
+                </p>
+                <p>
+                    In the past, some people called “wanderers” by Walter Benjamin, roam the arcade and even
+                    "walk the tortoises" as they try to confront the changes of modernity－alienation, division of labor,
+                    and the rapid progress of society. However, they were eventually incorporated into the business
+                    culture, and were lost in the maze of commodities.
+                </p>
+                <p>
+                    The film presents Taipei City Mall through the eyes of the lead character which describes
+                    Benjamin’s observations on modernity during the age of mechanical reproduction.
+                </p>
+                <p>
+                    In the spirit of Benjamin—"only presents, do not explain", with a combination of past text and
+                    present images, presents the changes of Benjamin’s concepts in the digital age.
+                </p>
+                <p>
+                    The film is divided into three parts. The first part shows a young man who has a monotonous
+                    job and is oppressed by his boss. This represents the main activities of the Taipei City Mall – young
+                    people who are struggling to survive in the 21st century.
+                </p>
+                <p>
+                    In the second part, the film presents the similarities between the underground street and the
+                    arcade, and the effects of capitalism and globalization. Benjamin believes that the mechanical
+                    reproduction will make cities become homogeneous. Taipei City Mall, just like the arcades of Paris
+                    will then become a microcosm of the contemporary city, or even the world.
+                <p>
+                    During the last part of the film, we can see that the underground street is filled with cheap
+                    goods and arcade game machines, which is like a utopian dream, a refuge from reality.
+                </p>
+                <p>
+                    People continue to be fascinated by the commodities and are alienated by the digital
+                    technology. The “wanderers” have turned to the virtual world of empathy.
+                </p>
+                <p>
+                    At the end, the video demo station allegorically interpreted the alienation of people in the digital
+                    age. Digital products create a "disembodied private space", which make people ignore everything
+                    tangible around. Now, we can see that many young people are sitting on the floor of the underground
+                    street, just like an alternative modernity in the digital era.
+                </p>
+                <br>
+                <dl class="dl-horizontal">
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        王迺嘉，現就讀於政治大學廣播電視學系研究所二年級，
+                        畢業於政治大學新聞學系與中國文學系。
+                        曾任PNN公視新聞議題中心實習記者，並參與三立敘事工場第四期說故事人才培訓，
+                        現專攻電影研究，期望透過影像創作影響社會。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Nai-JIa WANG</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="boai" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="topic-title">
+                <img src="./img/popup/boai.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Taipei Streets or the Barricades</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                   十九世紀，豪斯曼所推動的一連串巴黎都市改革計劃，
+                   某種程度上確實改善了巴黎的市容，推動了巴黎現代化，
+                   但對班雅明而言，其都市改革的背後，實則隱含了另一種政治意圖─永久消除街壘。
+                   道路的拓寬及重新翻修，讓街道失去了街壘設置的可能性。
+                   在班雅明的觀察下，街壘戰的時代隨著巴黎的現代化而宣告終結。
+                </p>
+                <p>
+                    而對照二十一世紀的臺北都會，日本殖民政府有意地執行「市容改正」計劃，
+                    將狹窄彎曲的街道進行截彎改直的政治意圖，似與豪斯曼有異曲同工之妙。
+                    而臺北街道不斷拓寬重鋪的過程下，街壘似乎如班雅明所預言，
+                    消失於二十一世紀的臺北都會中。
+                </p>
+                <p>
+                    但街壘的存在意義，其最終目的在於形成障礙物，
+                    進一步號召群眾、進行改革。現代街道上或許已沒有街壘設置的可能性，
+                    但從近期人民開始走上街頭，試圖以癱瘓交通及日常生活運行的抗爭模式來看，
+                    「街壘」其實依舊存在，只是，街道的物質提供性已不是街壘的形成要件，
+                    而被進一步轉換成以「人體」來進行街壘的建構。
+                </p>
+                <p>
+                    因此，影片的創作脈絡，會先初步以街壘戰的影像，對於街壘進行概念介紹，
+                    並搭配烏克蘭抗爭行動的街壘設置進行呼應。其後影像會回到臺北城市脈絡下，
+                    先觀看臺北高度現代化景觀，接著以臺北近代學運大量群眾聚集於街頭，
+                    癱瘓交通、日常生活運作的影像，來呈現現代人以「人體」來構成街壘的轉換形式。
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                    In 19th, The Haussmann's projects in Paris improved the appearance of Paris and advances
+                    the modernization in Paris. In fact, for Benjamin, the true political intention behind the projects was to
+                    eradicate the erection of barricades for all time because it was impossible to build the barricades in
+                    the rebuilt and broadened roads. Under the observations of Benjamin, the time of barricades came
+                    to an end with the modernization in Paris.
+                </p>
+                <p>
+                    Compared to Taipei city, the plans of city reforms from the Japanese colonial government
+                    had the same political intention as the Haussmann's projects in Paris. The barricades disappeared
+                    with the process of rebuilding and broadening the roads in Taipei city as what Benjamin predicted.
+                    However, the meaning of the existence of the barricades is to build the obstacles and appeal
+                    the people to arouse the revolution. With the development of modernization, it seems that the
+                    possibilities to build the barricades were vanished. In fact, the recent demonstrations in Taipei
+                    showed that the “barricades” still exit. Differently, the “barricades” didn’t create by the materials, but
+                    the “human bodies”. People started to use our own bodies to paralysis the
+                    traffic and forced the government to face our protests.
+                </p>
+                <p>
+                    About the concept of the video, first, I used the images of the barricades to explain how
+                    the barricades were created and worked, and put the images of the protests of Ukrain to present
+                    the traditional barricades in contemporary generation. Then, the video would show the
+                    spectacles of modernization in Taipei City and present the new form of “barricades”, which were
+                    built by the “human bodies” in recent Taipei demonstrations.
+                </p>
+                <br>
+                <dl class="dl-horizontal">
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        陳琬欣，中央大學法文系畢業後，轉向進入輔仁大學大眾傳播所就讀；
+                        入學規劃畢業後要當記者，卻在畢業前夕發現自己想當學者；
+                        為了生計曾短暫遊蕩於新聞業界，因緣際會又回到學術界。
+                        曾任政治大學廣告系專任研究助理，現為政治大學傳播學院博士生。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Wan-Shin CHEN</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="dunhua" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_5.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="topic-title">
+                <img src="./img/popup/dunhua.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Dun-Hua Road or the Boulevard</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                本創作試著從班雅明對待都市的觀點：藉隱喻式的寓言批判現代化進程，
+                來比照今日的臺北市區。又敦化南北路段自過去以來一直是臺北市區無論是消費娛樂，
+                甚至是迎接外賓的重要綠軸，「林蔭大道」是其理想生活的投射下所賦予的美名，
+                它揭示出在政治上的指標規劃，與形塑普遍市民對其心目中的想像。
+                且班雅明在對「林蔭大道」的意象討論中，也指出林蔭大道的目的存在，
+                總是以一種和諧安詳、安居，再正常不過的形象，好藏匿它本身的政治、商品化的目的。
+                </p>
+                <p>
+                    因此本創作自今日的敦化南北路段的地景意象開展，
+                    利用在路段上所記錄大眾的各式生活樣態，以及被視作理所當然的事物中尋找刺點，
+                    企圖戳出都市的破綻，賦予敦化南北路段，或者說整個臺北都市，
+                    有別於「理想生活」的現代性圖像。
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                    The creation tries to apply the viewpoint of Walter Benjamin, who used the concept of
+                    allegory to judge early modernization progress, for making comparison between today’s urban
+                    Taipei and Paris in 19th century. Since the past, Dunhua Road has been a resort to consumers,
+                    a façade to foreigners. “Taipei Boulevard” which is called to be a projection of ideal life. As the
+                    image of citizens, Taipei Boulevard disclosed the govern arrangement, and in Benjamin’s
+                    opinion, it also appeared as comfortable, harmony image to citizens in order to hide its political
+                    purpose and commercialization.
+                </p>
+                <p>
+                    Therefore, this creation records people’s living, and landscope in today’s DunHua Road,
+                    finding the “punctum” in city, and constructs another modernity image that differs from “ideal life”
+                    in DunHua Road section, or this Taipei City.
+                </p>
+                <br>
+                <dl class="dl-horizontal">
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        郭鈞涵，現就讀於政治大學廣播電視研究所，畢業於中興大學中文系，
+                        個性完好無特別嗜好，卻不自覺地在身心靈上保有當今「魯蛇」的基模，
+                        以至於對自己未來現實層面的想像，都沒有想像，但也保有多看多學的精神，
+                        期許藉傳播的專業讓這個社會、世界變得更好。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Chun-Han KUO</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <div id="deptmarket" class="inline_content topic_inline_content">
+            <div class="pull-left topic-film-block">
+                <div class="video-container">
+                    <video controls>
+                        <source src="./video/benjamin_6.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>                </div>
+            </div>
+            <div class="topic-title">
+                <img src="./img/popup/deptmarket.png" alt="title" class="img-responsive">
+            </div>
+            <div class="clearfix"></div>
+            <div class="film-description-block">
+                <p class="topic-title-eng">Department stores, Markets or the World Exhibitions</p>
+                <p><strong>創作理念</strong></p>
+                <p>
+                    班雅明引用泰納的話說，「世界博覽會是人們膜拜商品的聖地。」
+                    透過世界博覽會，群眾被激起了各種慾望，進入了迷宮般的現代化商品世界。
+                    隨著博覽會的發展，商品從一開始僅供參觀，出現了標價而趨於商品化。
+                    而百貨公司正是從世界博覽會的特性脫胎而來。
+                    從百貨公司開始，世界博覽會的奇觀性質就漸漸的世俗化，
+                    並且從大規模的展示形式，往更精緻的小眾市集裡蔓延。
+                </p>
+                <p>
+                    臺北是個具有相當多樣性的城市，高度的經濟發展在消費場域上也展現了多元的面貌，
+                    本創作由世界博覽會的發展與特性發想，由富麗堂皇的百貨公司進而探訪打著文創口號的創意市集。
+                    從19世紀英法開始的偉大展覽推展至21世紀的臺北資本迷宮，
+                    欲傳達世博對後世商品價值與展示方式的影響，如何由奇觀的世界博覽會演化成無所不在的「世俗博覽會」。
+                </p>
+                <p><strong>The Conception of Creation</strong></p>
+                <p>
+                        “World exhibitions are places of pilgrimage to the commodity fetish.” Benjamin quoted from Taine.
+                    Through world exhibitions, desires of masses are aroused in many ways, people walk into a maze of modern
+                    commodities. With the development of world exhibitions, goods become priced and turn into merchandise.
+                    Department stores born out of world exhibitions. While department stores come in to our lives, the spetacle
+                    of world exhibitions becomes secularized and spread to the refined niche creative market.
+                </p>
+                <p>
+                    Taipei is a city with considerable diversity, a high degree development in economics shows different
+                    apppearance on consumer field. Base on the features of world exhibitions, this film explores Taipei 101 and
+                    the Simple Market in Xinyi Public Assembly Hall, the representative department store and market in Taipei,
+                    observing how the splendid world exhibition evolves into a s ecularized exhibition. 
+                </p>
+                <br>
+                <dl class="dl-horizontal">
+                    <dt>創作者簡介</dt>
+                    <dd>
+                        鄭嘉鼎，畢業於台灣大學資管系，政治大學數位內容碩士學位學程在學。
+                        目前於 iNDIEVOX 獨立音樂網軟體開發部門實習。
+                        喜愛獨立音樂與攝影，擅長網頁與手機程式設計。
+                        雖為資訊領域出身，卻對傳播與文化研究甚有濃厚興趣，
+                        希望可以跨出舒適圈，結合自己的專長、將技術與不同內容串連創造各種可能。
+                    </dd>
+                    <dt>Creator</dt>
+                    <dd>Chia-Ting CHENG</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- intro window -->
+    <div style="display: none;">
+        <div id="intro" class="inline_content">
+            <div>
+                <img src="./img/popup/intro.png" alt="班雅明介紹" class="img-responsive intro-title pull-left" style="width: 30%;">
+                <div class="intro-title intro-title-eng pull-left">About Walter Benjamin</div>
+                <div style="width: 30%; height: auto;">
+                    <img src="./img/popup/WalterBenjamin.jpg" alt="華特班雅明" class="img-responsive pull-left"> 
+                </div>
+                <div style="width: 65%; margin-left: 5%;" class="pull-left">
+                    <p>
+                        華特·班雅明（1892－1940），德國籍猶太人，文學評論家與哲學家。
+                        一次世界大戰前深受馬克思主義影響，投入德國社會運動。
+                        1925年其論文《德國悲劇的起源》被法蘭克福大學拒絕後，過著獨立寫作的生活。
+                        一九三三年，希特勒上台，班雅明開始流亡，最後於法國和西班牙邊境自殺。
+                    </p>
+                    <p>
+                        班雅明著作範圍廣泛，如文學、哲學、音樂、大眾文化。
+                        但生前卻鮮為人知，直至死後，法蘭克福學派等人重新編纂出版班雅明作品，才深受重視。
+                    </p>
+                    <p>
+                        〈巴黎，十九世紀的都城〉為拱廊研究計劃中的一部分。
+                        班雅明觀察十九世紀資本主義，如何變化巴黎城市的人與物，並加入對波特萊爾詩文詮釋。
+                    </p>
+                    <br>
+                    <p>
+                        Walter Bendix Schönflies Benjamin was a German-Jewish Marxist literary critic, essayist, 
+                        translator, and philosopher. He was at times associated with the Frankfurt School of 
+                        critical theory and was also greatly inspired by the Marxism of Bertolt Brecht and Jewish mysticism 
+                        as presented by Gershom Scholem.
+                    </p>
+                    <p>
+                        As a sociological and cultural critic, Benjamin combined ideas drawn from historical materialism, 
+                        German idealism, and Jewish mysticism in a body of work which was a novel contribution to western 
+                        philosophy, Marxism, and aesthetic theory. As a literary scholar, he translated the Tableaux Parisiens 
+                        edition of Baudelaire's Les Fleurs du mal as well as Proust's In Search of Lost Time. His work is 
+                        widely cited in academic and literary studies, in particular his essays The Task of the Translator 
+                        and The Work of Art in the Age of Mechanical Reproduction. Influenced by Bachofen, Benjamin gave 
+                        the name "auratic perception" to the aesthetic faculty through which civilization would recover 
+                        a lost appreciation of myth.
+                    </p>
+                    <p>
+                        "Paris, Capital of the Nineteenth Century” is a part of Arcades Project. Benjamin observed 
+                        how Capitalism in 19th changed the people, event, and substance in Paris, and adding interpretation 
+                        about Baudelaire’s poems.
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- origination window -->
+    <div style="display: none;">
+        <div id="origination" class="inline_content">
+            <div>
+                <img src="./img/popup/origination.png" alt="研究緣起" class="img-responsive intro-title pull-left">
+                <div class="intro-title intro-title-eng pull-left">The Origins of Research</div>
+                <div class="clearfix"></div>
+                <div class="description-block">
+                    <p>
+                        本計劃乃源自陳儒修老師本學期所授課「班雅明專題」發想起，班雅明所著〈巴黎，十九世紀都城〉一文中，
+                        從六個面向加以剖析巴黎；本研究團隊擬以類似的研究精神，將班雅明對於巴黎之研究觀點轉移至臺北，並建構一想像：
+                        如果班雅明看臺北，他將如何觀察與剖析。本計劃將以影音多媒體方式呈現，一方面理解班雅明對十九世紀巴黎之研究，
+                        另一方面以有別於在地觀點來呈現多樣化的臺北城市景觀。
+                    </p>
+                    <p>
+                        本計劃亦期望能藉由將理論文字與心得轉化為創新的數位多媒體方式呈現，
+                        進而使班雅明的研究及臺北文化脈絡更容易為人所理解。
+                    </p>
+                    <br>
+                    <p>
+                        This group project results from a graduate course on Walter Benjamin’s writings and theories, 
+                        especially his “Paris, the Capital of the Nineteenth Century.” In this seminal article, 
+                        Benjamin analyzed the urbanization and modernization process of Paris by pairing historical 
+                        figures with social topics in six sections. They are:
+                        <ol>
+                            <li>Fourier or the Arcades</li>
+                            <li>Daguerre or the Dioramas</li>
+                            <li>Grandville or the World Exhibitions</li>
+                            <li>Louis-Philippe or the Interior</li>
+                            <li>Baudelaire or the Streets of Paris</li>
+                            <li>Haussmann or the Barricades</li>                                                
+                        </ol>
+                    </p>
+                    <p>
+                        This piece is a prime example of the “dialectic images” in Benjamin’s words. It is his studies
+                        and analysis of Paris as a metropolitan world in miniature. It can also be seen as a road map to
+                        investigate all sorts of social phenomena in Paris in the 19th century.
+                        By the following the same vein, our study group would like to “invite” Benjamin to visit Taipei in the
+                        21st century. The research question can be summarized as: what will Benjamin see if he is in Taipei
+                        today?
+                    </p>
+                    <p>
+                        We therefore complete six multimedia works, with images, sound, music, and words. By
+                        mingling different texts, we hope to present our dialectic images of Taipei as Benjamin might
+                        envision them. There are also six sections in our finished work. They are:
+                        <ol>
+                            <li>Estate Advertisement or the Panoramas</li>
+                            <li>Underground Market or the Arcade</li>
+                            <li>Taipei Streets or the Barricades</li>
+                            <li>Taipei Coffee Shop Saloon Culture or the Interiors</li>
+                            <li>Dun-Hua Road or the Boulevard</li>
+                            <li>Department stores, Markets or the World Exhibitions</li>                                                
+                        </ol>                    
+                        By applying HTML5, CSS, and JavaScript, these six works are compiled in a DVD. An old
+                        Taipei city map is used as a main Web page, from which six works are embedded and played as
+                        they represent different areas of Taipei. 
+                        We would like to take up this opportunity to present and display our DVD to those who study
+                        and love Benjamin’s works.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <img src="./img/popup/h_line.png" alt="" class="img-responsive intro-title">
+            </div>
+            <div>
+                <img src="./img/popup/team.png" alt="研究團隊" class="img-responsive intro-title pull-left">
+                <div class="intro-title intro-title-eng pull-left">Our Team</div>
+                <div class="clearfix"></div>
+                <div class="description-block">
+                    <dl class="dl-horizontal">
+                        <dt><a href="mailto:cinema@nccu.edu.tw" title="寫信給儒修老師">陳儒修</a>（傳播學院教授）</dt>
+                        <dd>計畫主持人，負責計畫總論與論述架構</dd>
+                        <dt><a href="mailto:102462005@nccu.edu.tw" title="寫信給中佾">王中佾</a>（數位內容碩士學程）</dt>
+                        <dd>計畫專案經理、協助各子題影音製作</dd>
+                        <dt><a href="mailto:102451023@nccu.edu.tw" title="寫信給慧妍">馬慧妍</a>（新聞所）</dt>
+                        <dd>「房地產廣告或西洋景」子題</dd>
+                        <dt><a href="mailto:102453001@nccu.edu.tw" title="寫信給迺嘉">王迺嘉</a>（廣電所）</dt>
+                        <dd>「臺北地下街或巴黎拱廊街」子題</dd>
+                        <dt><a href="mailto:102463503@nccu.edu.tw" title="寫信給琬欣">陳琬欣</a>（傳播學院博士班）</dt>
+                        <dd>「博愛特區或街壘」子題</dd>
+                        <dt><a href="mailto:101453009@nccu.edu.tw" title="寫信給梓和">黃梓和</a>（廣電所）</dt>
+                        <dd>「臺北咖啡廳內在世界」子題</dd>
+                        <dt><a href="mailto:102453009@nccu.edu.tw" title="寫信給鈞涵">郭鈞涵</a>（廣電所）</dt>
+                        <dd>「敦化南北路或林蔭大道」子題</dd>
+                        <dt><a href="mailto:101462001@nccu.edu.tw" title="寫信給嘉鼎">鄭嘉鼎</a>（數位內容碩士學程）</dt>
+                        <dd>「百貨市集或世界博覽會」子題、本網站之架設及撰寫</dd>
+                        <dt><a href="mailto:101462010@nccu.edu.tw" title="寫信給馨婷">游馨婷</a>（數位內容碩士學程）</dt>
+                        <dd>本網站之視覺規劃與設計</dd>
+                    </dl>
+                    <br>
+                    <dl class="dl-horizontal">
+                        <dt><a href="mailto:cinema@nccu.edu.tw" title="Write to Prof. Chen">Ru-Shou Robert CHEN</a></dt>
+                        <dd>Professor, Principal Investigator</dd>
+                        <dt><a href="mailto:102462005@nccu.edu.tw" title="Write to Chung-Yi">Chung-Yi WANG</a></dt>
+                        <dd>Master student, Project Manager</dd>
+                        <dt><a href="mailto:102451023@nccu.edu.tw" title="Write to Wai-In">Wai-In MA</a></dt>
+                        <dd>Master student, Creator of “Estate Advertisement or the Arcade”</dd>
+                        <dt><a href="mailto:102453001@nccu.edu.tw" title="Write to Nai-Jia">Nai-Jia WANG</a></dt>
+                        <dd>Master student, Creator of “Taipei Streets or the Barricades”</dd>
+                        <dt><a href="mailto:102463503@nccu.edu.tw" title="Write to Wan-Shin">Wan-Shin CHEN</a></dt>
+                        <dd>PhD student, Creator of “Taipei Streets or the Barricades”</dd>
+                        <dt><a href="mailto:101453009@nccu.edu.tw" title="Write to Tzu-Ho">Tzu-Ho HUANG</a></dt>
+                        <dd>Master student, Creator of “Taipei Coffee Shop Saloon Culture or the Interiors”</dd>
+                        <dt><a href="mailto:102453009@nccu.edu.tw" title="Write to Chun-Han">Chun-Han KUO</a></dt>
+                        <dd>Master student, Creator of “Dun-Hua Road or the Boulevard”</dd>
+                        <dt><a href="mailto:101462001@nccu.edu.tw" title="Write to Chia-Ting">Chia-Ting CHENG</a></dt>
+                        <dd>Master student, Creator of “Department stores, Markets or the World Exhibitions” and Developer of the website</dd>
+                        <dt><a href="mailto:101462010@nccu.edu.tw" title="Write to Cin-Tin">Cin-Tin YU</a></dt>
+                        <dd>Master student, Designer of the website</dd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('#bg').css({ 'opacity':0});
+        var resize_done = false;
+    	$(document).ready(function() {
+            var progressbar = $('#progressbar'),
+                max = progressbar.attr('max'),
+                time = (100/max)*3,
+                value = progressbar.val();
+
+            var loading = function() {
+                value += 1;
+                addValue = progressbar.val(value);
+
+                $('.progress-value').html(value + '%');
+
+                if (value == max && resize_done) {
+                    clearInterval(animate);
+                    $('#bg').css({ 'opacity':1 });
+                }
+            };
+
+            var animate = setInterval(function() {
+                loading();
+            }, time);
+        });
+
+        $(window).load(function(){
+
+            $(window).resize(function() {
+                $("#map>img").css({ height: $(window).height(), width: "auto" });
+                $("#map").css({ 'margin-left': ($(window).width() - $("#map>img").width()) / 2 });
+                resize_done = true;
+            }).trigger( "resize" );
+
+            $(".inline").colorbox({
+                inline: true,
+                transition: "none",
+                width: "75%",
+                height: "89%",
+                returnFocus: false,
+                onComplete: function(){
+                    $('#cboxLoadedContent').css('background-size', $(window).width()*0.75);
+                }
+            });
+
+        });
+
+    </script>
+</body>
+</html>
