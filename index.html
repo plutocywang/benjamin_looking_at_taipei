@@ -678,9 +678,10 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+<script type="text/javascript">
         $('#bg').css({ 'opacity':0});
-        var resize_done = false;
+        var resize_done = false; // 保持在這裡，但讓它在 load 時立即變 true
+
     	$(document).ready(function() {
             var progressbar = $('#progressbar'),
                 max = progressbar.attr('max'),
@@ -693,7 +694,8 @@
 
                 $('.progress-value').html(value + '%');
 
-                if (value == max && resize_done) {
+                // 檢查條件：value 是否達到 max
+                if (value >= max && resize_done) { // 使用 >= 確保即使跑過頭也能停止
                     clearInterval(animate);
                     $('#bg').css({ 'opacity':1 });
                 }
@@ -705,11 +707,13 @@
         });
 
         $(window).load(function(){
+            // >>> 關鍵修改：確保 resize_done 立即設定為 true <<<
+            resize_done = true; 
 
             $(window).resize(function() {
                 $("#map>img").css({ height: $(window).height(), width: "auto" });
                 $("#map").css({ 'margin-left': ($(window).width() - $("#map>img").width()) / 2 });
-                resize_done = true;
+                // 移除這裡的 resize_done = true 避免重複設定
             }).trigger( "resize" );
 
             $(".inline").colorbox({
