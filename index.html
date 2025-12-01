@@ -680,22 +680,31 @@
     </div>
 <script type="text/javascript">
         $('#bg').css({ 'opacity':0});
-        var resize_done = false; // 保持在這裡，但讓它在 load 時立即變 true
+        var resize_done = false; 
+        var max_value = 100; // 定義最大值為 100
 
     	$(document).ready(function() {
             var progressbar = $('#progressbar'),
                 max = progressbar.attr('max'),
                 time = (100/max)*3,
                 value = progressbar.val();
+            
+            // 確保 max 變數是數字 100，而不是字串
+            max_value = parseInt(max); 
 
             var loading = function() {
-                value += 1;
+                // *** 關鍵修改：先檢查是否達到最大值 ***
+                if (value < max_value) {
+                    value += 1;
+                }
+                // ***
+
                 addValue = progressbar.val(value);
 
                 $('.progress-value').html(value + '%');
 
-                // 檢查條件：value 是否達到 max
-                if (value >= max && resize_done) { // 使用 >= 確保即使跑過頭也能停止
+                // 檢查是否停止動畫
+                if (value >= max_value && resize_done) { 
                     clearInterval(animate);
                     $('#bg').css({ 'opacity':1 });
                 }
@@ -707,13 +716,12 @@
         });
 
         $(window).load(function(){
-            // >>> 關鍵修改：確保 resize_done 立即設定為 true <<<
+            // 確保 resize_done 立即設定為 true，允許動畫在 100% 時停止
             resize_done = true; 
 
             $(window).resize(function() {
                 $("#map>img").css({ height: $(window).height(), width: "auto" });
                 $("#map").css({ 'margin-left': ($(window).width() - $("#map>img").width()) / 2 });
-                // 移除這裡的 resize_done = true 避免重複設定
             }).trigger( "resize" );
 
             $(".inline").colorbox({
